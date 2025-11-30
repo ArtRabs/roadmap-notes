@@ -5,6 +5,7 @@ As a developer, it is important to have a solid understanding of what the intern
 ## Table of Contents
 - [Introduction to the Internet](#introduction-to-the-internet)
 - [How the Internet Works: An Overview](#how-the-internet-works-an-overview)
+- [What is the Switch and why we need it?](#what-is-the-switch-and-why-we-need-it)
 
 ---
 
@@ -63,3 +64,36 @@ The core of the internet is a global network of interconnected **routers**, whic
 - This process is repeated for every packet, which is why the internet is often called a **network of networks**.
 
 **Source:** [How does the internet work?](https://cs.fyi/guide/how-does-internet-work)
+
+
+## What is the Switch and why we need it?
+
+There are PC 1, PC 2, PC 3 and so on until PC 7.
+
+Note: PC is Personal Computer.
+
+How do we connect all the PCs together?
+
+Use switch and cables connect together with PCs
+
+CAT-5 CAT-6
+
+CAT = Category
+
+Of course CAT-6 is faster
+
+Fiber optic cable is faster than copper cables
+
+Switch cannot use wireless technology, it only works with cables.
+
+Can also use access point device instead of a switch device.
+
+Access point device use wireless
+
+We generally use copper cables.
+
+All these computer can only communicate to each eather if they are in the same network.
+
+Local Area Network or LAN
+
+**Source:** [How does the internet work? (Full Course)](https://youtu.be/zN8YNNHcaZc?si=2XY2ikhJ3JSb81GR)
