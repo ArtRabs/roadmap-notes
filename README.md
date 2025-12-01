@@ -6,7 +6,7 @@ Each topic is documented in Markdown files with explanations, diagrams, and refe
 ---
 
 ## 📂 Notes
-- [Internet](./internet.md)
+- [Internet Basics](./internet_basics.md)
 
 ---
 
