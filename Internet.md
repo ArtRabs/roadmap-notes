@@ -66,65 +66,46 @@ The core of the internet is a global network of interconnected **routers**, whic
 **Source:** [How does the internet work?](https://cs.fyi/guide/how-does-internet-work)
 
 
-## What is the Switch and why we need it?
+# 🌐 Internet Basics
 
-There are PC 1, PC 2, PC 3 and so on until PC 7.
+## 🔌 What is a Switch and Why Do We Need It?
 
-Note: PC is Personal Computer.
+- A **switch** connects multiple PCs together in a **Local Area Network (LAN)**.
+- Example: PC1, PC2, … PC7 all connect to the switch using cables.
+- **Cables used:**
+  - `CAT-5` and `CAT-6` (Category cables; CAT-6 is faster).
+  - Fiber optic cables are faster than copper cables.
+- **Limitations:**
+  - Switches only work with cables (no wireless).
+- **Alternative:**
+  - An **Access Point (AP)** provides wireless connectivity instead of cables.
+- **Communication:**
+  - PCs can only communicate if they are in the same network (LAN).
+  - Example packet flow:
+    ```text
+    PC1 → Switch → PC6
+    ```
+    If this happens, PC1 and PC6 are on the same network and can communicate.
+- **Ports:**
+  - Switch has LAN ports.
+  - PCs have LAN ports.
 
-How do we connect all the PCs together?
+⚠️ At this stage: PCs are connected in a LAN, but **no internet yet**.
 
-Use switch and cables connect together with PCs
+---
 
-CAT-5 CAT-6
+## 🌐 What is a Router?
 
-CAT = Category
+- A **router** connects the LAN (via the switch) to the **Internet**.
+- **ISP (Internet Service Provider)** provides the cable for internet access.
+- **Roles:**
+  - Switch handles LAN communication (PC1 ↔ PC5).
+  - Router does not manage LAN communication directly.
+  - Router enables PCs to send packets to the internet.
+- **Packet flow:**
+  ```text
+  PC1 → Switch → Router → Internet
+  ```
 
-Of course CAT-6 is faster
-
-Fiber optic cable is faster than copper cables
-
-Switch cannot use wireless technology, it only works with cables.
-
-Can also use access point device instead of a switch device.
-
-Access point device use wireless
-
-We generally use copper cables.
-
-All these computer can only communicate to each eather if they are in the same network.
-
-Local Area Network or LAN
-
-Packet or frame
-
-Packet from PC1 goes to switch
-Packet from switch goest to PC6
-If this happens, PC1 and PC6 can communicate
-Therefore it is the same network connected
-
-Switch has LAN ports
-PC has LAN ports
-
-Right now the PC only connected on the same network, no internet yet
-
-## What is the Router?
-
-About time to use router
-
-Connect the switch to router to access internet
-
-But not yet
-
-Internet Service Provider gives a cable to use internet
-
-Switch is enough to communicate to LAN, PC1 <-> PC5
-
-Router does not care about LAN, I mean no role in the communication of PC1 to other PCs and
-
-PC1 can send packet to internet
-
-Packet
-PC1 -> switch -> router -> internet
 
 **Source:** [How does the internet work? (Full Course)](https://youtu.be/zN8YNNHcaZc?si=2XY2ikhJ3JSb81GR)
