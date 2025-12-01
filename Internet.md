@@ -1,15 +1,16 @@
-# 🌐 Internet
+# 🌐 Internet Basics
 
 As a developer, it is important to have a solid understanding of what the internet is and how it works.
 
-## Table of Contents
-- [Introduction to the Internet](#introduction-to-the-internet)
-- [How the Internet Works: An Overview](#how-the-internet-works-an-overview)
-- [What is the Switch and why we need it?](#what-is-the-switch-and-why-we-need-it)
+## 📚 Table of Contents
+- [Introduction](#introduction)
+- [How the Internet Works](#how-the-internet-works)
+- [Switch](#-switch)
+- [Router](#-router)
 
 ---
 
-## Introduction to the Internet
+## Introduction
 
 **Network** — A group of computers or other devices connected to each other.
 
@@ -22,7 +23,7 @@ It was designed as a **decentralized communication network** that could withstan
 
 ---
 
-## How the Internet Works: An Overview
+## How the Internet Works
 
 At a high level, the internet works by connecting devices and computer systems together using a set of standardized protocols.
 
@@ -63,12 +64,7 @@ The core of the internet is a global network of interconnected **routers**, whic
 - The packet travels router by router until it reaches the final destination.
 - This process is repeated for every packet, which is why the internet is often called a **network of networks**.
 
-**Source:** [How does the internet work?](https://cs.fyi/guide/how-does-internet-work)
-
-
-# 🌐 Internet Basics
-
-## 🔌 What is a Switch and Why Do We Need It?
+## 🔌 Switch
 
 - A **switch** connects multiple PCs together in a **Local Area Network (LAN)**.
 - Example: PC1, PC2, … PC7 all connect to the switch using cables.
@@ -92,9 +88,18 @@ The core of the internet is a global network of interconnected **routers**, whic
 
 ⚠️ At this stage: PCs are connected in a LAN, but **no internet yet**.
 
+### Diagram: LAN with Switch
+```text
+   [PC1]   [PC2]   [PC3]   [PC4]   [PC5]   [PC6]   [PC7]
+      |      |      |       |       |       |       |
+      +------+------+-------+-------+-------+-------+
+                             |
+                          [Switch]
+```
+
 ---
 
-## 🌐 What is a Router?
+## 🌐 Router
 
 - A **router** connects the LAN (via the switch) to the **Internet**.
 - **ISP (Internet Service Provider)** provides the cable for internet access.
@@ -106,6 +111,20 @@ The core of the internet is a global network of interconnected **routers**, whic
   ```text
   PC1 → Switch → Router → Internet
   ```
+  ```text
 
+     [PC1]   [PC2]   [PC3]   [PC4]   [PC5]   [PC6]   [PC7]
+      |      |      |       |       |       |       |
+      +------+------+-------+-------+-------+-------+
+                             |
+                          [Switch]
+                             |
+                          [Router]
+                             |
+                          [Internet]
 
-**Source:** [How does the internet work? (Full Course)](https://youtu.be/zN8YNNHcaZc?si=2XY2ikhJ3JSb81GR)
+  ```
+  
+### Sources
+- 📄 Article: [How does the internet work?](https://cs.fyi/guide/how-does-internet-work)
+- 🎥 Video: [How does the internet work? (Full Course)](https://youtu.be/zN8YNNHcaZc?si=2XY2ikhJ3JSb81GR)
