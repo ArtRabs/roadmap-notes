@@ -96,4 +96,35 @@ All these computer can only communicate to each eather if they are in the same n
 
 Local Area Network or LAN
 
+Packet or frame
+
+Packet from PC1 goes to switch
+Packet from switch goest to PC6
+If this happens, PC1 and PC6 can communicate
+Therefore it is the same network connected
+
+Switch has LAN ports
+PC has LAN ports
+
+Right now the PC only connected on the same network, no internet yet
+
+## What is the Router?
+
+About time to use router
+
+Connect the switch to router to access internet
+
+But not yet
+
+Internet Service Provider gives a cable to use internet
+
+Switch is enough to communicate to LAN, PC1 <-> PC5
+
+Router does not care about LAN, I mean no role in the communication of PC1 to other PCs and
+
+PC1 can send packet to internet
+
+Packet
+PC1 -> switch -> router -> internet
+
 **Source:** [How does the internet work? (Full Course)](https://youtu.be/zN8YNNHcaZc?si=2XY2ikhJ3JSb81GR)
