@@ -371,6 +371,64 @@ A **WAN (Wide Area Network)** is a combination of multiple LANs connected togeth
                      [Internet]
   ```
 
+## Internet Service Provider
+
+Internet Service Provider ISP represent companies that enable us to connect to the internet
+
+To connect to internet to go to local ISP
+
+Local ISP can connect to the neighboor hood
+
+POint of presence POP
+
+can be switchesm, routers  , servers and so on
+
+Local ISP connect 4 neighbor hood, it has diffrent parts
+If 1 whole neighrhood, it is 1 part
+
+Local ISP 1 2 3 can connect to Regional ISP 1
+
+Local ISP connect neighborhoods
+Regional ISP connect cities in a country
+
+Local ISPs + Regional ISPs = Nework of a Country
+
+PC1 is in Local ISP 1 and PC2 is in Local ISP 2
+
+How to connect?
+
+Go to Regional ISP 1
+
+What if another country?
+
+Global ISP
+
+PC1 to Local ISP 1 to Regional ISP 1 to Global ISP 1 to Global ISP 2 to Regional ISP 2 to Local ISP 4 to PC 4
+
+If Local ISP connect directly to Global ISP
+ faster
+ suitable location
+ expensive infastructure
+
+It is also possible to connect LAN to Regional ISP
+
+Use send a request message to the server
+server sen a response message tot the user
+
+The packet flow path going to user -> server might be different to server -> user
+
+google is big, many servers around the world
+communicate fastest and efficient way
+
+Peering is to establish a direct connection with an ISP to provide faster access to each servers
+
+Local ISP -> Google Server
+
+YouTube is own by google, so it is fast in the first place
+
+Global ISP is responsible for international communications
+Internet backbone
+Internet Exchange Point IXP
 
 ### Sources
 - 📄 Article: [How does the internet work?](https://cs.fyi/guide/how-does-internet-work)
