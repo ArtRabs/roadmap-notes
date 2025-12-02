@@ -124,7 +124,100 @@ The core of the internet is a global network of interconnected **routers**, whic
                           [Internet]
 
   ```
-  
+
+## What does the Internet Represent
+
+There are many routers in internet.
+
+LAN 1 <-> Internet <-> LAN 2
+
+Connecting to to internet can stand for conneccting to the another computer in anywhere in the world.
+
+Internet is the strucutre that connect all LANs all over the world.
+
+In internet there are many routers.
+
+LAN 1 <-> Router 1 - Router 2 - Router 3 - ... <-> LAN 2
+
+If there are millions of LANs in the world, then it is obvious to use many routers as well.
+
+If there is no switch, how to LAN?
+
+If there is no router, how to connect to internet?
+
+Home router, it consist both switch and router capabilities.
+
+But only use home router if you have few devices, enough for usual home.
+
+If there is only one router to connect, let us say a giant router of some sort, then cool.
+
+But what if, it broke?
+
+All to lot and single point of failure.
+
+If that router failed, everybody fails connecting to internet.
+
+So just use many routers.
+
+Remember how to connect to router normally?
+
+PC 1 -> Switch -> Router -> Internet
+
+Switch to router uses cable but router to internet does not
+
+Imagine again the there is only one big router, then all cables all over the world is connected to that big router just to connect to internet.
+
+Disadvantages were overloading, world wide long cables, single point of failure.
+
+But who knows, somebody might use that kind of router and solved those disadvantages, or perhaps use that disadvantages as a exclusitivity.
+
+Even pirates found and sold cables that very long, I mean there is nothing to stop them.
+
+Another reason why use many routers instead. 
+
+Also there are country wide cables, at least not world wide, distributed to whole world. (The stuff pirates sold off)
+
+They all use fiber optics instead of copper.
+
+Why?
+
+Because it is fast and long lenght of it will perhaps not cause error in data transmission.
+
+How packet moves in internet
+
+LAN 1 -> LAN2
+
+Inside the LAN 1
+ PC1 -> Switch -> Router -> Internet
+ Inside the internet
+  Router 1 -> Router 2 -> Router 3 -> ...
+  Router X -> LAN 2
+
+Each router must have s specific table called Routing Table
+
+Forwarding, after a router recieve a packet
+
+Route Filtering, each router has a special processors
+
+Packet must always be sent in the fastest way
+
+There are many ways, many routers in internet, so the packet can be sent in many routers just to get from LAN 1 to LAN 2, but packet a special algorithm to go the fastest way.
+
+Also it is miliseconds happening.
+
+Remember that
+
+> The internet is a **network of networks**.
+
+We all have many kinds of devices like phone, tablet, computer, smart television, and so on.
+
+So in our home is LAN 1, our friends is LAN 2, neighbor is LAN 3, and there are many more people in this world, so there is a lot of LAN
+
+So every LAN connected to internet, is also the internet itself.
+
+Combination of all these networks.
+
+
 ### Sources
 - 📄 Article: [How does the internet work?](https://cs.fyi/guide/how-does-internet-work)
 - 🎥 Video: [How does the internet work? (Full Course)](https://youtu.be/zN8YNNHcaZc?si=2XY2ikhJ3JSb81GR)
