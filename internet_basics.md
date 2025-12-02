@@ -10,6 +10,8 @@ As a developer, it is important to have a solid understanding of what the intern
 - [What Does the Internet Represent](#-what-does-the-internet-represent)
 - [Meaning of Connecting to the Internet](#-meaning-of-connecting-to-the-internet)
 - [Wide Area Network](#-wide-area-network)
+- [Router 2](#-router-2)
+- [Internet Service Provider](#-internet-service-provider)
 
 ---
 
@@ -371,64 +373,91 @@ A **WAN (Wide Area Network)** is a combination of multiple LANs connected togeth
                      [Internet]
   ```
 
-## Internet Service Provider
+## 🌐 Internet Service Provider
 
-Internet Service Provider ISP represent companies that enable us to connect to the internet
+Internet Service Providers or ISPs are companies that enable users to connect to the internet.
 
-To connect to internet to go to local ISP
+### Types of ISPs
 
-Local ISP can connect to the neighboor hood
+- **Local ISP**: connects neighborhoods.
 
-POint of presence POP
+- **Regional ISP**: connects cities within a country.
 
-can be switchesm, routers  , servers and so on
+- **Global ISP**: connects countries across the world.
 
-Local ISP connect 4 neighbor hood, it has diffrent parts
-If 1 whole neighrhood, it is 1 part
 
-Local ISP 1 2 3 can connect to Regional ISP 1
+### ISP Hierarchy
 
-Local ISP connect neighborhoods
-Regional ISP connect cities in a country
+```text
+LAN 1   LAN 2   LAN 3
+  |       |       |
+  +---+---+-------+
+          |
+     Local ISP 1
+          |
+     Regional ISP 1
+          |
+     Global ISP 1
+          |
+     Global ISP 2
+          |
+     Regional ISP 2
+          |
+     Local ISP 2
+  +---+---+-------+
+  |       |       |
+LAN 4   LAN 5   LAN 6
 
-Local ISPs + Regional ISPs = Nework of a Country
+```
 
-PC1 is in Local ISP 1 and PC2 is in Local ISP 2
+- Local ISPs 1, 2, 3 can connect to the same Regional ISP.
 
-How to connect?
+- Local ISPs + Regional ISPs = **Network of a Country**.
 
-Go to Regional ISP 1
+- Some Local ISPs may connect directly to Global ISPs:
 
-What if another country?
+  - Faster
 
-Global ISP
+  - Suitable location
 
-PC1 to Local ISP 1 to Regional ISP 1 to Global ISP 1 to Global ISP 2 to Regional ISP 2 to Local ISP 4 to PC 4
+  - Requires expensive infrastructure
 
-If Local ISP connect directly to Global ISP
- faster
- suitable location
- expensive infastructure
+### Point of Presence (PoP)
 
-It is also possible to connect LAN to Regional ISP
+- A PoP is a physical location where ISPs connect.
 
-Use send a request message to the server
-server sen a response message tot the user
+- Can include switches, routers, servers, and other networking equipment.
 
-The packet flow path going to user -> server might be different to server -> user
+### LAN to ISP
 
-google is big, many servers around the world
-communicate fastest and efficient way
+- A LAN can connect directly to a Regional ISP.
 
-Peering is to establish a direct connection with an ISP to provide faster access to each servers
+- Communication involves:
 
-Local ISP -> Google Server
+  - Sending a **request message** to a server.
 
-YouTube is own by google, so it is fast in the first place
+  - Receiving a **response message** from the server.
 
-Global ISP is responsible for international communications
-Internet backbone
-Internet Exchange Point IXP
+- Note: The **packet path** from user → server may differ from server → user.
+
+### Peering
+
+- **Peering** is a direct connection between an ISP and a service provider (Google, Netflix, Microsoft, etc.).
+
+- Purpose: faster access to servers and content.
+
+  ```text
+  Local ISP → Google Server
+  ```
+- YouTube is owned by Google, so it benefits from direct peering.
+
+### Global ISP Responsibilities
+
+- Handles international communications.
+
+- Maintains the Internet Backbone.
+
+- Connects through Internet Exchange Points (IXPs).
 
 ### Sources
 - 📄 Article: [How does the internet work?](https://cs.fyi/guide/how-does-internet-work)
