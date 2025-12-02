@@ -8,7 +8,7 @@ As a developer, it is important to have a solid understanding of what the intern
 - [Switch](#-switch)
 - [Router](#-router)
 - [What Does the Internet Represent](#-what-does-the-internet-represent)
-
+- [Meaning of Connecting to the Internet](#-meaning-of-connecting-to-the-internet)
 ---
 
 ## Introduction
@@ -61,35 +61,52 @@ The core of the internet is a global network of interconnected **routers**, whic
 ```
 
 - Your device breaks data into **packets**.
+
 - Each router examines the **packet header** and decides the next hop.
+
 - The packet travels router by router until it reaches the final destination.
+
 - This process is repeated for every packet, which is why the internet is often called a **network of networks**.
 
 ## 🔌 Switch
 
 - A **switch** connects multiple PCs together in a **Local Area Network (LAN)**.
+
 - Example: PC1, PC2, … PC7 all connect to the switch using cables.
+
 - **Cables used:**
+
   - `CAT-5` and `CAT-6` (Category cables; CAT-6 is faster).
+
   - Fiber optic cables are faster than copper cables.
+
 - **Limitations:**
+
   - Switches only work with cables (no wireless).
+  
 - **Alternative:**
+
   - An **Access Point (AP)** provides wireless connectivity instead of cables.
+
 - **Communication:**
+
   - PCs can only communicate if they are in the same network (LAN).
   - Example packet flow:
     ```text
     PC1 → Switch → PC6
     ```
     If this happens, PC1 and PC6 are on the same network and can communicate.
+
 - **Ports:**
+
   - Switch has LAN ports.
+
   - PCs have LAN ports.
 
 ⚠️ At this stage: PCs are connected in a LAN, but **no internet yet**.
 
 ### Diagram: LAN with Switch
+
 ```text
    [PC1]   [PC2]   [PC3]   [PC4]   [PC5]   [PC6]   [PC7]
       |      |      |       |       |       |       |
@@ -103,15 +120,21 @@ The core of the internet is a global network of interconnected **routers**, whic
 ## 🌐 Router
 
 - A **router** connects the LAN (via the switch) to the **Internet**.
+
 - **ISP (Internet Service Provider)** provides the cable for internet access.
+
 - **Roles:**
+
   - Switch handles LAN communication (PC1 ↔ PC5).
   - Router does not manage LAN communication directly.
   - Router enables PCs to send packets to the internet.
+
 - **Packet flow:**
+
   ```text
   PC1 → Switch → Router → Internet
   ```
+
   ```text
 
      [PC1]   [PC2]   [PC3]   [PC4]   [PC5]   [PC6]   [PC7]
@@ -168,14 +191,19 @@ Connecting to to internet can stand for conneccting to the another computer in a
 ```
 
 - Each router uses a **routing table** to decide the next hop.
+
 - Routers perform **forwarding** and **route filtering**.
+
 - Packets are sent via the **fastest available path** using algorithms.
+
 - This happens in **milliseconds**.
 
 ### Fiber Optics vs Copper
 
 - Internet backbone cables use **fiber optics**:
+
   - Faster transmission.
+
   - Longer distances with fewer errors.
 
 - Copper is common in LANs but not ideal for global infrastructure.
@@ -197,33 +225,44 @@ Connecting to to internet can stand for conneccting to the another computer in a
 - Billions of devices — phones, tablets, computers, smart TVs — connect through these LANs.
 - The internet is the **combination of all these networks**.
 
-## Meaning of Connecting to the Internet
+## 🌐 Meaning of Connecting to the Internet
 
-This time we will only use router feature.
+When connecting to the internet, we primarily use the **router feature**.  
+A home router also works, since it includes router capabilities.
 
-Home router also works, it alos had the capability of router feature.
+### Example: Accessing YouTube
 
-If user wants to connect to, lets say youtube.com
+- User clicks a video on **youtube.com**.
 
-As soon as you click any videos in youtube, the computer will create a packet.
+- The computer creates a **packet** (request message).
 
-Packet will be sent to router then internet then youtube.
+- Packet flow:
 
-After the youtube receive and reads the request message (the packet), them the youtube sends the related video over the internet, then home router back to the computer.
+  ```text
+  PC → Home Router → Internet → YouTube Server
+  ```
 
-If it is a video in youtube, then it is streaming.
+- The YouTube server receives the packet, processes the request, and sends the video back.
 
-Streaming, youtube sends it back to you piece by piece.
+- Since the video is delivered piece by piece, this process is called **streaming**.
 
-Packet transmission is the basis of connecting to the internet or communicating to the computer or to the other side of the world
+### Packet Transmission
 
-Server, much must be much more powerful computer
+- Packet transmission is the basis of:
 
-It must be powerful than normal computer, because many people also connects in it
+  - Connecting to the internet.
 
-So in example of youtube, it had a server, people will connect there
+  - Communicating with computers anywhere in the world.
 
-There are also many servers as well, remember the single point of failure.
+### Servers
+
+- A server is a much more powerful computer than a normal PC.
+
+- Servers must handle connections from many users simultaneously.
+
+- Example: YouTube servers manage millions of video requests.
+
+- There are many servers across the internet — this avoids a single point of failure.
 
 ### Wide Area Network (WAN)
 
