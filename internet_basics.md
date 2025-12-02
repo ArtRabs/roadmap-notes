@@ -9,6 +9,8 @@ As a developer, it is important to have a solid understanding of what the intern
 - [Router](#-router)
 - [What Does the Internet Represent](#-what-does-the-internet-represent)
 - [Meaning of Connecting to the Internet](#-meaning-of-connecting-to-the-internet)
+- [Wide Area Network](#-wide-area-network)
+
 ---
 
 ## Introduction
@@ -264,61 +266,67 @@ A home router also works, since it includes router capabilities.
 
 - There are many servers across the internet — this avoids a single point of failure.
 
-### Wide Area Network (WAN)
+## 🌐 Wide Area Network
 
-Can be a combination of LAN
+A **WAN (Wide Area Network)** is a combination of multiple LANs connected together.
 
-LAN 1 + LAN 2 = WAN
+### LAN and WAN
 
-Use internet to coonect these 2 LANs
+- LAN 1 + LAN 2 = WAN
 
-If you can use internet in the first place, why use WAN?
+- LANs are **private networks**.
 
-Of course, internet is a Public Network, everyong use internet.
+- WANs use the **internet** to connect LANs across different locations.
 
-Hackers is also everywhere too
+### Why Use WAN Instead of Just Internet?
 
-A LAN is a private network, but what happens if you pass a private file to other LAN?
+- The internet is a **public network** — everyone uses it.
 
-I will go through internet, which is public
+- Hackers and vulnerabilities exist everywhere.
 
-Setup a WAN
+- Sending private files directly over the internet exposes them.
 
-To setup, use VPN Virtual Private Network
+- A WAN provides **privacy and security** between LANs.
 
-It provides privacy to LAN 1 and LAN 2
+### Setting Up a WAN
 
-High security communication between two locations
+- Use a **VPN (Virtual Private Network)**.
 
-PC1 -> Home Router -> VPN Tunnel -> Home Router -> PC1
+- VPN provides secure communication between LAN 1 and LAN 2.
 
-Site to Site VPN
+- Example packet flow:
 
-Use encryption then enscapulation
+  ```text
+  PC1 → Home Router → VPN Tunnel → Home Router → PC2
+  ```
 
-Enscapulation, putting a packet inside another packet
+### VPN Techniques
 
-Tunneling is a special encapsulation method
+- **Site-to-Site VPN** connects entire LANs securely.
 
-in the Home Router of a receiver Decapsulation then decryption
+- **Encryption**: protects the data.
 
-Then send the packet to receiver computer
+- **Encapsulation**: wrapping a packet inside another packet.
 
-There is no such thing as %100 security
+- **Tunneling**: a special encapsulation method.
 
-Every system has vulnerability
+- On the receiving side:
 
-But still better to have something than nothing
+  - **Decapsulation** removes the wrapper.
 
-What is the largest WAN?
+  - **Decryption** restores the original packet.
 
-Internet
+- Then the packet is delivered to the destination computer.
 
+### Security Notes
 
+- There is no such thing as **100% security**.
 
+- Every system has vulnerabilities.
 
+- Still, VPNs and WAN setups are **better than nothing**.
 
-
+> The *largest WAN* in the world is **internet**.
 
 ### Sources
 - 📄 Article: [How does the internet work?](https://cs.fyi/guide/how-does-internet-work)
