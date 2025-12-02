@@ -328,31 +328,49 @@ A **WAN (Wide Area Network)** is a combination of multiple LANs connected togeth
 
 > The *largest WAN* in the world is **internet**.
 
-## Router 2
+## 🔌 Router 2
 
-We can create a single LAN by connecting 2 switches together
+### Connecting Switches
 
-The distance must be short between to switches
+- A single LAN can be created by connecting **two switches** together.
 
-Campus Area Network (CAN)
+- The distance between switches must be short.
 
-Which one is more secure? WAN with VPN or LAN?
+- Example: **Campus Area Network (CAN)**.
 
-LAN is always more secure, the packet does not move from internet
+### Security Comparison
 
-Both are secure, but LAN is more secure
+- Which is more secure: **WAN with VPN** or **LAN**?
 
-LAN switches
+  - LAN is always more secure since packets do not leave the local network.
 
-WAN routers
+  - Both can be secure, but LAN avoids exposure to the internet.
 
-Main task of router is to connect different types of networks
+### Router Tasks
 
-LAN 1 and LAN 2 can use the same router
+- LANs use **switches**.
 
-PC1 -> Swtich 1 -> Router -> Switch 2 -> PC3
+- WANs use **routers**.
 
-Normal in office where the other LAN is marketing and other is Strategy
+- Main task of a router: connect **different types of networks**.
+
+### Campus Area Network (CAN)
+
+  ```text
+          LAN 1                          LAN 2
+   +----------------+             +----------------+
+   |   [PC1] [PC2]  |             |   [PC3] [PC4]  |
+   |       |        |             |       |        |
+   |    [Switch 1]  |             |    [Switch 2]  |
+   +--------+-------+             +--------+-------+
+            |                              |
+            +------------+-----------------+
+                         |
+                      [Router]
+                         |
+                     [Internet]
+  ```
+
 
 ### Sources
 - 📄 Article: [How does the internet work?](https://cs.fyi/guide/how-does-internet-work)
