@@ -197,6 +197,86 @@ Connecting to to internet can stand for conneccting to the another computer in a
 - Billions of devices — phones, tablets, computers, smart TVs — connect through these LANs.
 - The internet is the **combination of all these networks**.
 
+## Meaning of Connecting to the Internet
+
+This time we will only use router feature.
+
+Home router also works, it alos had the capability of router feature.
+
+If user wants to connect to, lets say youtube.com
+
+As soon as you click any videos in youtube, the computer will create a packet.
+
+Packet will be sent to router then internet then youtube.
+
+After the youtube receive and reads the request message (the packet), them the youtube sends the related video over the internet, then home router back to the computer.
+
+If it is a video in youtube, then it is streaming.
+
+Streaming, youtube sends it back to you piece by piece.
+
+Packet transmission is the basis of connecting to the internet or communicating to the computer or to the other side of the world
+
+Server, much must be much more powerful computer
+
+It must be powerful than normal computer, because many people also connects in it
+
+So in example of youtube, it had a server, people will connect there
+
+There are also many servers as well, remember the single point of failure.
+
+### Wide Area Network (WAN)
+
+Can be a combination of LAN
+
+LAN 1 + LAN 2 = WAN
+
+Use internet to coonect these 2 LANs
+
+If you can use internet in the first place, why use WAN?
+
+Of course, internet is a Public Network, everyong use internet.
+
+Hackers is also everywhere too
+
+A LAN is a private network, but what happens if you pass a private file to other LAN?
+
+I will go through internet, which is public
+
+Setup a WAN
+
+To setup, use VPN Virtual Private Network
+
+It provides privacy to LAN 1 and LAN 2
+
+High security communication between two locations
+
+PC1 -> Home Router -> VPN Tunnel -> Home Router -> PC1
+
+Site to Site VPN
+
+Use encryption then enscapulation
+
+Enscapulation, putting a packet inside another packet
+
+Tunneling is a special encapsulation method
+
+in the Home Router of a receiver Decapsulation then decryption
+
+Then send the packet to receiver computer
+
+There is no such thing as %100 security
+
+Every system has vulnerability
+
+But still better to have something than nothing
+
+What is the largest WAN?
+
+Internet
+
+
+
 
 
 
